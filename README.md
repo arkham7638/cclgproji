@@ -22,6 +22,11 @@ Mtaplotlib = Matplotlib is a plotting library for the Python programming languag
 
 Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines.
 
+# *Data Preprocessing*
+To work with categorical variables, we should break each categorical column into dummy columns with 1s and 0s.
+
+Let’s say we have a column Gender, with values 1 for Male and 0 for Female. It needs to be converted into two columns with the value 1 where the column would be true and 0 where it will be false.
+
 
 # Exploring The Feature Engineering 
 
@@ -50,6 +55,8 @@ def update(weight,bias,x_train,y_train,learningRate,iteration) :
     plt.show()
 
     return parameters, gradients
+    
+    
 
 # Dimensionality Reduction
 
