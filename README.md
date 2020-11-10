@@ -29,6 +29,11 @@ To work with categorical variables, we should break each categorical column into
 
 Let’s say we have a column Gender, with values 1 for Male and 0 for Female. It needs to be converted into two columns with the value 1 where the column would be true and 0 where it will be false.
 
+df = pd.get_dummies(df, columns = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal'])
+standardScaler = StandardScaler()
+columns_to_scale = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+df[columns_to_scale] = standardScaler.fit_transform(df[columns_to_scale])
+
 
 # Exploring The Feature Engineering 
 
