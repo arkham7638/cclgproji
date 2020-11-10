@@ -26,13 +26,30 @@ Scikit-learn is a free software machine learning library for the Python programm
 # Exploring The Feature Engineering 
 
 STEP2: Second step consist of the feature engineering part which will do the (new feature called price per square feet).
+def update(weight,bias,x_train,y_train,learningRate,iteration) :
+    costList = []
+    index = []
+    
+    #for each iteration, update weight and bias values
+    for i in range(iteration):
+        cost,gradients = forwardBackward(weight,bias,x_train,y_train)
+        weight = weight - learningRate * gradients["Derivative Weight"]
+        bias = bias - learningRate * gradients["Derivative Bias"]
+        
+        costList.append(cost)
+        index.append(i)
 
-df3['price_per_sqft'] = df3['Price']*100000/df3['Area']
+    parameters = {"weight": weight,"bias": bias}
+    
+    print("iteration:",iteration)
+    print("cost:",cost)
 
-(b) - Examine locations which is a categorical variable. We need to apply dimensionality reduction technique here to reduce number of locations
+    plt.plot(index,costList)
+    plt.xlabel("Number of Iteration")
+    plt.ylabel("Cost")
+    plt.show()
 
-df3.Location = df3.Location.apply(lambda x: x.strip())
-Location_stats = df3['Location'].value_counts(ascending=False)
+    return parameters, gradients
 
 # Dimensionality Reduction
 
