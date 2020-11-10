@@ -3,6 +3,8 @@ Machine Learning is used across many spheres around the world. The healthcare in
 
 In this article, I’ll discuss a project where I worked on predicting potential Heart Diseases in people using Machine Learning algorithms. The algorithms included K Neighbors Classifier, Support Vector Classifier, Decision Tree Classifier and Random Forest Classifier. The dataset has been taken from Kaggle. My complete project is available at Heart Disease Prediction.
 
+The data is the coutesey of the kaggle(https://www.kaggle.com/ronitf/heart-disease-uci)
+
 
 # Prediction 
 
