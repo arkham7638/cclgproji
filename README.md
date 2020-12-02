@@ -14,6 +14,10 @@ python app.py
 
 That's it! It's serving a saved Keras model to you via Flask.
 # Collaborators:
-Karthikeyan,Alagendran,Sheik Mohammed
+https://www.linkedin.com/in/dilpreet-kaur-2201111a3/
+https://www.linkedin.com/in/shiv-verma-b25179201
+https://www.linkedin.com/in/iqbal-singh-118576199
+https://www.linkedin.com/in/daksh-sharma-bb48a5180
+
 # Author
-KarthiKeyan S
+arkham7638
